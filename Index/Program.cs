@@ -69,7 +69,7 @@ namespace Index
             List<double> Ji_Xiao_List;
             #endregion
             #region 计算大指数
-            holeindex_all_year = ReadFileByLine("E:\\WorkSpace\\BP\\Data.txt");
+            holeindex_all_year = ReadFileByLine("Data.txt");
             
             for (int i = 0; i < YEAR; i++)
             {
