@@ -4,21 +4,19 @@
 // andrew.kirillov@gmail.com
 //
 
-namespace Index
+namespace AForge.Neuro.Learning
 {
-    using AForge.Neuro;
-    using AForge.Neuro.Learning;
-    using System;
+	using System;
 
-    /// <summary>
-    /// Back propagation learning algorithm
-    /// </summary>
-    /// 
-    /// <remarks>The class implements back propagation learning algorithm,
-    /// which is widely used for training multi-layer neural networks with
-    /// continuous activation functions.</remarks>
-    /// 
-    public class BackPropagationLearning : ISupervisedLearning
+	/// <summary>
+	/// Back propagation learning algorithm
+	/// </summary>
+	/// 
+	/// <remarks>The class implements back propagation learning algorithm,
+	/// which is widely used for training multi-layer neural networks with
+	/// continuous activation functions.</remarks>
+	/// 
+	public class BackPropagationLearning : ISupervisedLearning
 	{
 		// network to teach
 		private ActivationNetwork network;

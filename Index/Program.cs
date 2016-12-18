@@ -1,5 +1,5 @@
 ﻿using AForge.Neuro;
-//using AForge.Neuro.Learning;
+using AForge.Neuro.Learning;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -116,7 +116,7 @@ namespace Index
                 {
                     Console.WriteLine("\n");
                 }
-                Console.WriteLine("{0:D}年大指数：", year);
+                Console.WriteLine("{0:D}年BP神经网络综合评价值：", year);
                 init_dictionary(out Zhi_Shu_Zi_Dian, Zhi_Shu_List);
                 PrintData(Zhi_Shu_Zi_Dian, Zhi_Shu_List);                
                 year++;
