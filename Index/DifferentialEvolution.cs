@@ -180,7 +180,7 @@ namespace Index
 
                 #region MyLoops
 
-                int tmp1;
+                //int tmp1;
 
                 for (i = 0; i < I_popnumber; i++)  //rotate indices by ind(0) positions
                 {

@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Index", "Index\Index.csproj", "{C8DF6F64-7704-42FA-8D4F-A1E1B325B539}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53B51230-2CD7-435B-8677-A3E24D134CD8} = {53B51230-2CD7-435B-8677-A3E24D134CD8}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AForge", "AForge", "{9F9A3C8E-237E-45DF-9395-AD0483F49AB9}"
 EndProject
