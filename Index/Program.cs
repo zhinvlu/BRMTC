@@ -435,15 +435,42 @@ namespace Index
         }
         static void SearchSolution(out BackPropagationLearning teacher,double[][] input, double[][] output)
         {
+            int gen = 0;
+            int maxCycle = 2000;
+            double error = 0;
+            double minDeError = 0.1;
             ActivationNetwork network = new ActivationNetwork(
                 new BipolarSigmoidFunction(2),
                 Input_layer, Hidden_layer, Output_layer);
             teacher = new BackPropagationLearning(network);
-            teacher.LearningRate = Learning_Rate;
-            teacher.Momentum = Momentum;
             int iteration = 1;
+            //teacher.LearningRate = Learning_Rate;
+            //teacher.Momentum = Momentum;
 
-            double error = 1.0;
+            //DE de = new DE();
+            //double[,] trainData = new double[OBJECTNUM, IndexNUM];
+            //double[] targetData = new double[OBJECTNUM];
+            //for (int i = 0; i < OBJECTNUM; ++i)
+            //{
+            //    targetData[i] = output[i][0];
+            //    for (int j = 0; j < IndexNUM; ++j)
+            //    {
+            //        trainData[i, j] = input[i][j];
+            //    }
+            //}
+            //de.Initialize(network, trainData, targetData);
+            //while (gen <= maxCycle)
+            //{
+            //    de.Mutation();
+            //    de.CrossOver();
+            //    de.Selection();
+            //    gen++;
+            //    error = de.SaveBest();
+            //    if (error < minDeError)
+            //        break;
+            //}
+
+            error = 1.0;
             while (error > 0.001)
             {
                 error = teacher.RunEpoch(input, output) / OBJECTNUM;
@@ -485,7 +512,7 @@ namespace Index
             List<double> Zhi_Shu_List = new List<double>();
             foreach (var item in listGroup)
             {
-                Zhi_Shu_List.Add(Zhi_Shu(quan_zhong_xi_shu_list, item));
+                Zhi_Shu_List.Add(Zhi_Shu(item, quan_zhong_xi_shu_list));
             }
             return Zhi_Shu_List;
         }

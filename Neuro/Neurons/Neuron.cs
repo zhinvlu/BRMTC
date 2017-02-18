@@ -28,10 +28,15 @@ namespace AForge.Neuro
 		/// </summary>
 		protected double[]	weights = null;
 
-		/// <summary>
-		/// Neuron's output value
-		/// </summary>
-		protected double	output = 0;				
+        public double[] Weights
+        {
+            get { return weights; }
+        }
+
+        /// <summary>
+        /// Neuron's output value
+        /// </summary>
+        protected double	output = 0;				
 
 		/// <summary>
 		/// Random number generator

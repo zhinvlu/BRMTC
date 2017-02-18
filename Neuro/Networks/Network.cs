@@ -32,10 +32,14 @@ namespace AForge.Neuro
 		/// </summary>
 		protected Layer[]	layers;
 
-		/// <summary>
-		/// Network's output vector
-		/// </summary>
-		protected double[]	output;
+        public Layer[] Layers
+        {
+            get { return layers; }
+        }
+        /// <summary>
+        /// Network's output vector
+        /// </summary>
+        protected double[]	output;
 
 		/// <summary>
 		/// Network's inputs count

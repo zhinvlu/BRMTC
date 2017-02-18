@@ -32,10 +32,15 @@ namespace AForge.Neuro
 		/// </summary>
 		protected Neuron[]	neurons;
 
-		/// <summary>
-		/// Layer's output vector
-		/// </summary>
-		protected double[]	output;
+        public Neuron[] Neurons
+        {
+            get { return neurons; }
+        }
+
+        /// <summary>
+        /// Layer's output vector
+        /// </summary>
+        protected double[]	output;
 
 		/// <summary>
 		/// Layer's inputs count
